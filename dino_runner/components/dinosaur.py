@@ -7,7 +7,7 @@ class Dinosaur(Sprite):
     POS_X = 80
     POS_Y = 310
     POS_Y_DUCKING = 340
-    JUMP_VEL = 8.5
+    JUMP_VEL = 44.5
 
     def __init__(self):
         self.image = RUNNING[0]
@@ -79,7 +79,7 @@ class Dinosaur(Sprite):
 
             self.dino_rect.y -= self.jump_vel * 4 # Salto
 
-            self.jump_vel -= 0.8 # Salto, cuando llega a negativo, baja
+            self.jump_vel -= 2.4 # Salto, cuando llega a negativo, baja
 
         if self.jump_vel < -self.JUMP_VEL: # Cuando llega a JUMP_VEL en negativo, este se detiene
 
